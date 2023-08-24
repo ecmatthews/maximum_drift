@@ -7,7 +7,7 @@ Calculate the maximum drift of a host star from a companion with specified separ
 ### drift calculation
 
 Based on the method described in Montagnier 2008 (PhD thesis), see https://www.theses.fr/2008GRE10289 - using formula (10) on page 78 to reproduce figure (11) on page 79. Briefly, the RV drift of a companion is ``dz``. For a companion observed with a projected separation ``x``, the true separation is:
-$\rho = \sqrt(x^2+z^2)$.
+$\rho = \sqrt{(x^2+z^2)}$.
 The acceleration magnitude is a function of the true separation: for any true separation >= x, we can calculate the expected acceleration, and the component in the dz direction, assuming a circular orbit:
 
 $\frac{d^2z}{dt^2} = \frac{Gm_2}{\rho^2}\cos(\arcsin(\frac{x}{r}))$.
